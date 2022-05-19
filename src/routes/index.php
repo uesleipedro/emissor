@@ -18,7 +18,7 @@ $app->get('/', function (Request $request, Response $response, $args) {
 $app->group('/nfe', function (RouteCollectorProxy $group) {
 
   $group->get('', function (Request $request, Response $response) {
-    $response->getBody()->write(json_encode(Dfe::emitir()));
+    $response->getBody()->write(json_encode(Dfe::emitDfe()));
     return $response;
   });
 });
